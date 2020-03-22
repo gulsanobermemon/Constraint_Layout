@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Hunt Like a Pro"
+        android:layout_marginTop="2dp"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo"
+        android:textStyle="italic"/>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join The Community"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/facebook_drawable"
+        android:drawableLeft="@drawable/ic_iconfinder_06_facebook_104498"
+        android:text="Login With Facebook"
+        android:drawablePadding="10dp"
+        android:textColor="#ffffff"
+        android:id="@+id/btn_fb_login"
+        />
+
+
+    <Button
+        android:id="@+id/btn_twt_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/twitter_drawable"
+        android:drawableLeft="@drawable/ic_iconfinder_03_twitter_104501"
+        android:drawablePadding="10dp"
+        android:text="Login With Twitter"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_fb_login"
+        app:layout_constraintRight_toRightOf="@+id/btn_fb_login"
+        app:layout_constraintTop_toBottomOf="@id/btn_fb_login" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_skip_login"
+        android:text="Skip Login"
+        app:layout_constraintTop_toBottomOf="@id/btn_twt_login"
+        android:layout_marginTop="150dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:background="@android:color/transparent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
